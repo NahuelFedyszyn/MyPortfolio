@@ -12,6 +12,7 @@ body{
     overflow-x: hidden;
     color:white;
     z-index: -1;
+    font-family: 'Bodoni Moda', serif;
 }
 
 a{
@@ -70,44 +71,83 @@ footer{
     align-items: center;
     text-align: center;
     box-shadow: white 0px 0px 10px ;
+    background-image: url("https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/what-is-coding.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.1s ease-in-out;
+    margin-bottom: 0;
+
 }
 
-#welcome div{
-    display: block;
+.welcomeDiv{
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.637);
 }
 
-#welcome h1{
+.welcomeDivSub{
+    box-shadow: white 0px 0px 10px 10px;
+    margin-top: 30vh;
+    height: 40vh;
+    padding-top: 8vh;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+.welcomeDivSub h1{
     font-size: 7vh;
     text-shadow: white 0px 0px 8px;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 300;
+    
 }
 
-#welcome p{
+.welcomeDivSub p{
     font-size: 4vh;
     text-shadow: white 0px 0px 8px;
+    font-family: 'Bodoni Moda', serif;
 }
+
 
 #aboutMe{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .aboutMe{
-    width: 80vw;
-    height: 65vh;
-    padding: 5vh 5vw;
+    width: 100vw;
+    height: 100vh;
+    
     background-color: rgba(0, 0, 0, 0.747);
     box-shadow: white 0px 0px 10px 1px ;
-    border-radius: 30px;
+    
     position: relative;
-    }
+}
 
-.aboutMe h1{
-    font-size: 4vh;
+.aboutMe span{
+    margin-top: 20vh;
+}
+
+.aboutMeTitle{
+    font-size: 6.5vh;
+    font-style: italic;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 100;
+    text-shadow: white 0px 0px 8px;
+    margin: 10vh 3vw;
+    margin-top: 25vh;
+}
+
+.aboutMeArticle{
+    margin: 0vh 15vw;
 }
 
 .aboutMe p{
-    font-size: 3vh;
+    font-size: 1.5vw;
     text-align: justify;
 }
 #aboutMeImgContainer{
@@ -123,7 +163,213 @@ footer{
     border: white solid 0.5px;
 }
 
+#fedySection{
+    height: 100vh;
+}
 
+#fedyTitleDiv{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    font-size: 15vh;
+    
+    margin-top: 15vh;
+}
 
+#fedyTitle{
+    font-size: 8vh;
+}
 
+#fedyDevelopmentSpan{
+    width: 30vw;
+    margin: 0 30vh;
+    
+}
 
+#fedyImg{
+    height: 50vh;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    box-shadow: white 0px 0px 10px 10px;
+    position: relative;
+    left: 5vw;
+    border-radius: 50px;
+    background-color: rgb(253, 253, 253);
+    transition: 0.3s;
+}
+
+#fedyImg:hover{
+    transform: scale(1.2);
+}
+
+#fedyArticle{
+    margin:10vh 15vw;
+    margin-top: 20vh;
+}
+
+#fedyArticle p{
+    font-size: 1.5vw;
+    text-align: justify;
+    margin: 10vh ;
+}
+
+#projects{
+    display: block;
+    background-color: #100e17;
+    box-shadow: white 0px 0px 10px ;
+}
+
+#projectsTitle{
+    padding-top: 5vh;
+}
+
+#card-container {
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #100e17;
+    padding-top: 3vh;
+    scroll-behavior: smooth;
+
+}
+
+.card {
+    min-width: 300px;
+    height: 350px;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    transition: 0.2s;
+    border:1px solid white;
+}
+
+.date {
+    color: #8a8a8a;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 1rem;
+}
+
+.tags div {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border: 3px solid #28242f;
+    border-radius: 2rem;
+}
+
+.card .category-title {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.card .article-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card .article-header {
+    margin-bottom: auto;
+    height: 15vh;
+    max-width: 20vw;
+}
+
+.card .article-image-container{
+
+    
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 15px;
+}
+
+#cardFedyImg{
+    background-image: url(img/logoPrincipalTransp.png);
+    height: 24vh;
+    width: 33vh;
+    background-color: white;
+}
+
+.card .author {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+}
+
+.author .info .caption {
+    color: #8a8a8a;
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:hover~.card{
+    transform: translateX(130px);
+}
+
+.slideBtnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 2vw;
+}
+
+.btnSlide{
+    height: 5vh;
+    width: 47vw;
+    margin: 0 0.5vw;
+    border-radius: 10px;
+    background-color: #161616;
+    box-shadow: 0px 0px 5px 1px white;
+    transition: 0.3s;
+}
+
+.btnSlide:hover{
+    box-shadow: 0px 0px 5px 5px white;
+    cursor: pointer;
+}
+
+.btnSlide:focus{
+    border: none;
+}
+
+.cardSlider{
+    
+}
+
+.colabDiv{
+    height: 3vh;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.colabDiv p{
+    font-size: 1.5vh;
+    padding: 0;
+    display: block;
+    margin: 0;
+}
+
+.colabDiv h1{
+    display: block;
+    font-size: 1.5vh;
+}
+
+.colabDib div{
+    margin:0;
+}

@@ -7,10 +7,12 @@
     <title>Bienvenido</title>
     <link rel="shortcut icon" href="img/logo1600x1600.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
     <script src="app.js"></script>
 
 </head>
-<body>
+<body onload="onLoad()">
     <header id="header">
         <a href="#aboutMe">SOBRE MI</a>
         <a>MIS PROYECTOS</a>
@@ -19,37 +21,78 @@
 
     <main>
         <section id="welcome">
-            <div>
-                <h1>¡Hola! Mi nombre es Nahuel Fedyszyn</h1>
-                <p>Un apasionado por el desarrollo de software</p>
+            <div class="welcomeDiv">
+                <div class="welcomeDivSub">
+                    <h1>¡Hola! Mi nombre es Nahuel Fedyszyn</h1>
+                    <p>Un apasionado por el desarrollo de Software</p>
+                </div>
             </div>
         </section>
+
         <section id="aboutMe">
             <div class="aboutMe">
-                <span><h1>Sobre mi</h1></span>
-                <article>
-                    <p>Soy un estudiante de Ingenieria en Informatica en la Universidad Catolica de Salta, y actualmente me encuentro en un trabajo de medio tiempo (no relacionado con la informatica), pero el tiempo que me queda entre mi vida como estudiante y mi vida como trabajador, lo dedico a ser autodidacta y aprender cada dia mas del desarrollo de software.</p>
-                    <p>Me apasiona el aprender nuevas cosas en informatica; el proceso de descubrir, estudiar, practicar y mejorar es algo que me encanta, y soy muy consciente que jamas lograre aprender todo en el ambito de la informatica, ya que continuamente se estan desarrollando cosas nuevas. Justamente eso me da tranquilidad, porque se que siempre que quiera aprender algo nuevo, habra algo por descubrir y aprender</p>
-                    <p>Si hay algo que me atrae del mundo profesional del desarrollo de software, es el trabajo en equipo. A diferencia de otras profesiones, en informatica existe una mayor inclinacion hacia la colaboracion por sobre la competencia entre profesionales, y si bien hay gente que es competitiva (que no tiene nada de malo) y esto les pueda resultar contraproducente, yo amo este ambito. El hecho de que entre profesionales compartamos nuestras experiencias, nuestros proyectos, las cosas que descubrimos y las habilidades que adquirimos es, para mi, la razon por la cual el mundo de la tecnologia informatica avanza a pasos agigantados. De mas esta decir que, por supuesto, apoyo de manera incondicional al desarrollo de software open source.</p>
+                <span><h1 class="aboutMeTitle">"Practico y estudio diariamente, utilizando la pasion como combustible para mi motivacion"</h1></span>
+                <article class="aboutMeArticle">
+                    <p>Soy un estudiante de Ingenieria en Informatica apasionado por el desarrollo de Software. Todos los dias estoy estudiando los conocimientos que me brinda mi universidad, complementandolos con cursos para poder fortalezer los conceptos en los que estoy más interesado, y realizando proyectos para poner en practica esos conocimientos.</p>
+                    <p>Estoy buscando cumplir mi objetivo de ser parte de una compañia de desarrollo de Software, y el camino que estoy tomando para lograr ese objetivo es el del conocimiento y la experiencia.</p>
                 </article>
             </div>
         </section>
-        <section id="aboutMe">
-            <div class="aboutMe">
-                <span><h1>Las cosas que me gustan</h1></span>
-                <article>
-                    <p>Soy una persona bastante sencilla; me gusta estar con mis amigos, escuchar buena musica y tomar una cerveza, pero al mismo tiempo soy una persona a la que le encanta tomarse en serio sus responsabilidades</p>
-                    <p>Tanto en mi trabajo como en la universidad, siempre estoy enfocado en mis objetivos y los de mi grupo, y cuando es tiempo de ponerse manos a la obra, dejo todo de lado para poder enfocarme totalmente en lo que haya que hacer. En cuanto el periodo de trabajo pase, me doy mi tiempo para relajarme y estar con las personas que quiero</p>
-                </article>
-                <div id="aboutMeImgContainer">
-                    <img id="aboutMeImg" src="img/IMG_20210315_161744298.jpg">
+
+        <section id="fedySection" style="display: block;">
+            <div id="fedyTitleDiv">
+                <img id="fedyImg" src="img/logoPrincipalTransp.png" />
+                <span id="fedyDevelopmentSpan"><h1 id="fedyTitle" class="aboutMeTitle">Mi espacio para el desarrollo frontend</h1></span>
+            </div>
+            <article id="fedyArticle">
+                <p>Actualmente soy el fundador y unico empleado de Fedy Deveolpment, compañia dedicada al diseño de paginas web para pequeñas y medianas empresas, o para particulares independientes, con el objetivo de hacer que sus trabajos tengan una imagen más profesional frente a sus clientes y poder brindarles más información a los mismos a través de Internet</p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <div style="display: block;"><h1 id="projectsTitle" class="aboutMeTitle">"Algunos de los proyectos en los que participe"</h1></div>
+            <div class="cardSlider">
+                <div id="card-container">
+                    <a href="#welcome" class="card">
+                        <div class="article-header">
+                            <div>
+                                <div class="category-title">
+                                    Portfolio Website
+                                </div>
+                            </div>
+                            <h2 class="article-title">
+                                Nahuel Fedyszyn | Fedy Development
+                            </h2>
+                        </div>
+                        <div id="cardFedyImg" class="article-image-container">
+
+                        </div>
+                        <div class="tags">
+                            <div>JavaScript</div>
+                            <div>HTML</div>
+                            <div>CSS</div>
+                        </div>
+                        <div class="colabDiv">
+                            <div>
+                                <h1>En colaboracion con:</h1>
+                                <p>-</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Hasta aqui una tarjeta -->
+                    
+                    
+                </div> <!--HASTA AQUI EL CONTAINER DE LAS TARJETAS-->
+                <div class="slideBtnContainer">
+                    <button class="btnSlide" onmousedown="scrollLeft();" id="btnSlideLeft" type="button"></button>
+                    <button class="btnSlide" onclick="scrollRight();" id="btnSlideRight" type="button"></button>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-
+        
     </footer>
 </body>
 </html>
