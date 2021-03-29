@@ -1,5 +1,7 @@
 let index = 0;
 
+
+
 //Imagenes estaticas
 const imagenes = [
   "url('https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/what-is-coding.png')",
