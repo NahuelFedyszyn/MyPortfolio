@@ -159,7 +159,7 @@ footer{
 }
 
 .aboutMe p{
-    font-size: 1.5vw;
+    font-size: 2.5vh;
     text-align: justify;
     color:white;
 }
@@ -225,7 +225,7 @@ footer{
 }
 
 #fedyArticle p{
-    font-size: 1.5vw;
+    font-size: 2.5vh;
     text-align: justify;
     margin: 10vh ;
 }
@@ -298,7 +298,7 @@ footer{
 .myCard .article-header {
     margin-bottom: auto;
     height: 15vh;
-    max-width: 20vw;
+    max-width: 100%;
 }
 
 .myCard .article-image-container{
@@ -319,6 +319,7 @@ footer{
     width: auto;
     height: 100%;
     border-radius: 5px;
+    margin-top: 4vh;
 }
 
 
@@ -417,7 +418,7 @@ footer{
 .contactContainerLeft{
     
     height: 60vh;
-    width: 50%;
+    width: 100vw;
 }
 
 .contactContainerRight{
